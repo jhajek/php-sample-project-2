@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project name = "php" default = "dist">
-<exec command = "euca-run-instances -k Windows10-key -g default -t t1.micro -n 1 emi-c87b2863 -d $B64" escape="false" checkreturn="true" />
+<exec command = "euca-run-instances -k Windows10-key -g default -t t1.micro -n 1 emi-c87b2863 -d ${pword}" escape="false" checkreturn="true" />
 
 
 
