@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<exec command = "euca-run-instances -k Windows10-key -g default -t t1.micro -n 1 emi-c87b2863" escape="false" />
+<project name = "php" default = "dist">
+<exec command = "euca-run-instances -k Windows10-key -g default -t t1.micro -n 1 emi-c87b2863 -d $B64 -f ./scripts/launch-test.sh" escape="false" checkreturn="true" />
 
 <target name = "prepare">
 <mkdir dir = "./build" />
