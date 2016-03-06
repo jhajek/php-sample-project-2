@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<target name = "prepare">
+<mkdir dir = "./build" />
+</target>
+
+<target name = "build" depends = "prepare">
+<copy file = "./src/about.php" tofile = "./build/about.php" />
+<copy file = "./src/browse.php" tofile = "./build/browse.php" />
+<copy file = "./src/index.php" tofile = "./build/index.php" />
+<copy file = "./src/contact.php" tofile = "./build/contact.php" />
+<copy file = "./scripts/launch-scripts.sh" tofile = "./build/launch-scripts.sh" />
+<copy file = "./scripts/composer.json" tofile = "./build/composer.json" />
+</target>
+
+<target name = "dist" depends = "build">
+
+<tar destfile = "./build/build.tar.gz" compression = "gzip">
+<fileset dir = "./build">
+<include name = "*" />
+</fileset>
+</tar>
+</target>
+</project>
