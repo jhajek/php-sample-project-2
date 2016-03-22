@@ -27,6 +27,7 @@ THE SOFTWARE.
         <meta charset="UTF-8">
         <title></title>
     </head>
+Just leave a message... and maybe I'll call...
     <body>
         <?php
         // put your code here

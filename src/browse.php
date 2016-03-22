@@ -28,7 +28,8 @@ THE SOFTWARE.
         <title></title>
     </head>
     <body>
-        <?php
+    Here be dragons...    
+     <?php
         // put your code here
         ?>
     </body>

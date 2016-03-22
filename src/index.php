@@ -28,8 +28,12 @@ THE SOFTWARE.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
+  <a href="browse.php">browse.php</a>      
+  <a href="about.php">about.php</a>
+  <a href="contact.php">contact.php</a>
+  <a href="index.php">index.php</a>
+  <?php
+        echo "hello word"; 
         ?>
     </body>
 </html>
